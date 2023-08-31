@@ -1,0 +1,15 @@
+@media (max-width: 768px) {
+    .sidebar {
+      display: none; /* Hide the sidebar */
+    }
+    .sidebar.toggled {
+      display: block; /* Show the sidebar when toggled */
+    }
+    .toggled #content-wrapper {
+      margin-left: 0; /* Adjust content margin when sidebar is toggled */
+    }
+  }
+  #content-wrapper {
+    transition: margin 0.3s;
+    margin-left: 250px; /* Adjust the sidebar width accordingly */
+  }
