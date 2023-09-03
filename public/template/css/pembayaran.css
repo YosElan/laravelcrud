@@ -1,15 +1,72 @@
+/* General Styles */
+
+.icon-button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+.icon-button i {
+  font-size: 24px;
+  /* Ubah ukuran ikon sesuai kebutuhan */
+}
+
+/* Sidebar Styles */
+
+#accordionSidebar {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Menyembunyikan sidebar di luar layar */
+  width: 250px;
+  height: 100%;
+  transition: left 0.3s ease;
+}
+
+#accordionSidebar.active {
+  left: 0; /* Aktifkan efek slide saat sidebar muncul */
+  transition: left 0.3s ease;
+}
+
+/* Overlay Styles */
+
+#sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  display: none; /* Mulai dengan display none */
+}
+
+#sidebar-overlay.active {
+  display: block; /* Aktifkan overlay saat sidebar muncul */
+}
+
+/* Content Wrapper Styles */
+
+#content-wrapper {
+  transition: margin-left 0.3s ease;
+}
+
+#content-wrapper.active {
+  margin-left: 250px; /* Styling untuk menggeser konten saat sidebar muncul */
+  transition: margin-left 0.3s ease;
+}
+
+/* Media Query */
+
 @media (max-width: 768px) {
-    .sidebar {
-      display: none; /* Hide the sidebar */
-    }
-    .sidebar.toggled {
-      display: block; /* Show the sidebar when toggled */
-    }
-    .toggled #content-wrapper {
-      margin-left: 0; /* Adjust content margin when sidebar is toggled */
-    }
+  .sidebar {
+    display: none; /* Hide the sidebar */
   }
-  #content-wrapper {
-    transition: margin 0.3s;
-    margin-left: 250px; /* Adjust the sidebar width accordingly */
+  
+  .sidebar.toggled {
+    display: block; /* Show the sidebar when toggled */
   }
+  
+  .toggled #content-wrapper {
+    margin-left: 0; /* Adjust content margin when sidebar is toggled */
+  }
+}

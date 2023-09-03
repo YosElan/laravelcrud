@@ -1,9 +1,9 @@
-@extends('template.main')
+@extends('template.siswa')
 @section('konten')
 <div class="container-fluid">
     <!-- Page Heading -->
-    <h1 class="h3 mb-2 text-gray-800">Data Pembayaran</h1>
-    <p class="mb-4">Manajemen Spp | Inventory Spp</p>
+    {{-- <h1 class="h3 mb-2 text-gray-800">Data Pembayaran</h1>
+    <p class="mb-4">Manajemen Spp | Inventory Spp</p> --}}
     <!-- DataTales Example -->
     <div class="card shadow mb-4">
         <div class="card-header py-3">

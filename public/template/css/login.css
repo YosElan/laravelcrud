@@ -12,7 +12,7 @@ body
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #23242a;
+    background: #595959;
     overflow: hidden;
 }
 .box
@@ -101,7 +101,7 @@ body
 {
     position: absolute;
     inset: 4px;
-    background: #222;
+    background: #e0e0e0;
     padding: 50px 40px;
     border-radius: 8px;
     z-index: 2;
@@ -110,7 +110,7 @@ body
 }
 .box form h2
 {
-    color: #fff;
+    color: #010101;
     font-weight: 500;
     text-align: center;
     letter-spacing: 0.1em;
@@ -130,7 +130,7 @@ body
     outline: none;
     border: none;
     box-shadow: none;
-    color: #000000;
+    color: #ffffff;
     font-size: 1em;
     letter-spacing: 0.05em;
     transition: 0.5s;
@@ -142,15 +142,15 @@ body
     left: 0;
     padding: 20px 0px 10px;
     pointer-events: none;
-    color: #8f8f8f;
+    color: #000000;
     font-size: 1em;
     letter-spacing: 0.05em;
     transition: 0.5s;
-}
+}   
 .box form .inputBox input:valid ~ span,
 .box form .inputBox input:focus ~ span
 {
-    color: #fff;
+    color: #000000;
     font-size: 0.75em;
     transform: translateY(-34px);
 }
@@ -161,7 +161,7 @@ body
     bottom: 0;
     width: 100%;
     height: 2px;
-    background: #fff;
+    background: #000000;
     border-radius: 4px;
     overflow: hidden;
     transition: 0.5s;
@@ -181,13 +181,13 @@ body
 {
     margin: 10px 0;
     font-size: 0.75em;
-    color: #8f8f8f;
+    color: #000000;
     text-decoration: none;
 }
 .box form .links a:hover,
 .box form .links a:nth-child(2)
 {
-    color: #fff;
+    color: #000000;
 }
 .box form input[type="submit"]
 {
